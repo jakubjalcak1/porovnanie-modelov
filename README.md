@@ -18,8 +18,19 @@ OWID CO2 dataset (Our World in Data), súbor `co2-data.csv`. Súbor nie je súč
 
 ## Spustenie
 
+Najprv stiahni `co2-data.csv` z <https://github.com/owid/co2-data> a daj ho do rovnakého priečinka ako skript. Potom v tomto priečinku (Windows, `cmd`):
+
 ```
-pip install pandas scikit-learn matplotlib
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+V PowerShelli je druhý príkaz `.venv\Scripts\Activate.ps1`.
+
+Skript potom spusti:
+
+```
 python porovnanie_modelov.py
 ```
 
